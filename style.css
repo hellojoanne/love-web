@@ -1,0 +1,55 @@
+body {
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    background-color: #ffebf0;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h1 {
+    color: #d63384;
+}
+
+img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#yesBtn {
+    background-color: #ff4d6d;
+    color: white;
+}
+
+#noBtn {
+    background-color: #6c757d;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100px); opacity: 0; }
+}
+
+.heart {
+    position: absolute;
+    color: red;
+    font-size: 20px;
+    animation: float 2s linear infinite;
+}
